@@ -6,7 +6,7 @@ import { Element } from 'react-scroll'
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client"
-import { a } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import './Work.scss';
 
