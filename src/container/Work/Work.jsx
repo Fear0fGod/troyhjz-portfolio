@@ -6,7 +6,7 @@ import { Element } from 'react-scroll'
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client"
-import { Link } from "react-router-dom";
+import { a } from "react-router-dom";
 
 import './Work.scss';
 
@@ -85,15 +85,15 @@ const Work = () => {
 								transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5}}
 								className="app__work-hover app__flex"
 							>
-								<Link
-								to={`/${work._id}`}>
+								<a
+								href={`/${work._id}`}>
 								<button
 								className="button__eye"
 								data-target={`#details${work._id}`}
 									>
 										View
 									</button>
-								</Link>
+								</a>
 							</motion.div>
 							<div>
 							</div>
