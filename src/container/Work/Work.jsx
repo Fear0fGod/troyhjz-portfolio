@@ -85,15 +85,15 @@ const Work = () => {
 								transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5}}
 								className="app__work-hover app__flex"
 							>
-								<a
-								href={`/${work._id}`}>
+								<Link
+								to={`/${work._id}`}>
 								<button
 								className="button__eye"
 								data-target={`#details${work._id}`}
 									>
 										View
 									</button>
-								</a>
+								</Link>
 							</motion.div>
 							<div>
 							</div>
